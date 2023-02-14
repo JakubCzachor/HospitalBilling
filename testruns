@@ -1,0 +1,77 @@
+
+API Tests:
+
+POST Requests:
+Link: localhost:5000/items
+
+{
+    "patient": {
+        "name": "Jakub Czachor",
+        "address": "123 Test Address Drive, Brooklyn NY 11222"
+    },
+    "hospital": {
+        "name": "Test Hospital 1"
+    },
+    "date": "2023-02-14",
+    "bill": 1000
+}
+
+{
+    "patient": {
+        "name": "Jakub Czachor",
+        "address": "123 Test Address Drive, Brooklyn NY 11222"
+    },
+    "hospital": {
+        "name": "Test Hospital 1"
+    },
+    "date": "2023-02-12",
+    "bill": 2000
+}
+
+{
+    "patient": {
+        "name": "Jakub Czachor",
+        "address": "123 Test Address Drive, Brooklyn NY 11222"
+    },
+    "hospital": {
+        "name": "Test Hospital 2"
+    },
+    "date": "2023-02-11",
+    "bill": 3000
+}
+
+
+{
+    "patient": {
+        "name": "John Doe",
+        "address": "UNKNOWN"
+    },
+    "hospital": {
+        "name": "Test Hospital 2"
+    },
+    "date": "2023-02-15",
+    "bill": 1000
+}
+
+{
+    "patient": {
+        "name": "Jane Doe",
+        "address": "UNKNOWN"
+    },
+    "hospital": {
+        "name": "Test Hospital 4"
+    },
+    "date": "2023-02-16",
+    "bill": 1000
+}
+
+GET Requests:
+
+Link(All Entries): localhost:5000/items
+Link(Search By Name): localhost:5000/items/search?name=Jakub%20Czachor
+Link(Search By Hospital): localhost:5000/items/search?hospital=Test%20Hospital%201
+Link(Search By Date of Service): localhost:5000/items/search?date=2023-02-16
+Link(Search By Multiple): localhost:5000/items/search?name=Jakub%20Czachor&hospital=Test%20Hospital%201
+
+
+

@@ -1,0 +1,30 @@
+Backend for Hospital Billing System
+Prerequisites:
+
+Node.js must be installed
+
+Instructions for initial setup:
+
+Open your terminal and navigate to the project directory
+Run the command npm install to install all the required dependencies
+Start the server by running the command node server.js. The server will run on port 5000.
+Use the following JSON format to store a new entry:
+
+
+{
+    "patient": {
+        "name": "NAME",
+        "address": "ADDRESS"
+    },
+    "hospital": {
+        "name": "HOSPITAL"
+    },
+    "date": "DATE",
+    "bill": AMOUNT
+}
+
+To access all the entries, send a GET request to localhost:5000/items.
+
+To retrieve specific entries, you can send a GET request to localhost:5000/items/search endpoint with the desired search parameter. 
+You can search by name, hospital, date, bill, or address. 
+The format for the GET request would be localhost:5000/items/search?parameter=value.
